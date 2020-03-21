@@ -1,7 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
 body{
+<<<<<<< HEAD
 	background: #d5d5d5;
 	font-size:2em;
+=======
+	background: #eee;
+	font-size:5em;
+>>>>>>> d2308d5e105e91ff49115ca411a4460bcf737290
 	font-weight: bold;
+	text-shadow: 0 0 4px rgba(0,0,0,0.3);
+
 }
