@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>スライドショー（タイマーの利用）</title>
+</head>
+
+<body>
+  <div style="text-align: center;">
+    <h1>スライドショー</h1>
+    <img src="pictures/picture000.jpg" style="width: 640px;" />
+  </div>
+
+<script type="text/javascript">
+"use strict";
+let カウンタ = 0;
+let タイマーID;
+
+タイマーID = setInterval(画像を表示する, 1000*2);
+
+function 画像を表示する() {
+  let ファイル名 = `pictures/picture00${カウンタ}.jpg`;
+  // alert(ファイル名);
+  document.images[0].src = ファイル名;
+  カウンタ++;
+  if (5 <= カウンタ) {
+    clearInterval(タイマーID);
+  }
+}
+</script>
+
+</body>
+</html>
