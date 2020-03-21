@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>toi06</title>
+<link rel="css/style.css"/>
+</head>
+
+<body>
+<script>
+	"use strict"
+let おみくじ乱数 =Math.random();
+	if (おみくじ乱数>=0.9) {おみくじ乱数=[`大吉`,`daikichi`];}
+	else if (おみくじ乱数>=0.7) {おみくじ乱数=[`中吉`,`chuukichi`];}
+	else if (おみくじ乱数>=0.5) {おみくじ乱数=[`小吉`,`shoukichi`];}
+	else if (おみくじ乱数>=0.3) {おみくじ乱数=[`末吉`,`suekichi`];}
+	else if (おみくじ乱数>=0.1) {おみくじ乱数=[`凶`,`kyou`];}
+	else {おみくじ乱数=[`大凶`,`daikyou`];}
+	document.write(`あたなの運勢は${おみくじ乱数[0]}です<img src="../student/pictures/omikuji_${おみくじ乱数[1]}.png" style="width:10%;"/>`);
+	</script>
+</body>
+</html>
