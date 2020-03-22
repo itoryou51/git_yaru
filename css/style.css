@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
 body{
 	background: #d5d5d5;
 	font-size:2em;
@@ -9,6 +15,9 @@ body{
 }
 
 p{
-	font-size:5em;
-	color: blue;
+	font-size:2em;
+}
+
+label{
+	display:block;
 }
